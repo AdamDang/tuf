@@ -282,7 +282,7 @@ class TestRepository(unittest.TestCase):
         repository_name=repository_name)
 
     # Verify status() does not raise 'tuf.exceptions.UnsignedMetadataError' if any of the
-    # the top-level roles. Test that 'root' is improperly signed.
+    # top-level roles. Test that 'root' is improperly signed.
     repository.root.unload_signing_key(root_privkey)
     repository.root.load_signing_key(targets_privkey)
     repository.status()
