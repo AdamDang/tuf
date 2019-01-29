@@ -222,7 +222,7 @@ class MultiRepoUpdater(object):
     # improperly formatted.
     tuf.formats.MAPFILE_SCHEMA.check_match(self.map_file)
 
-    # Save the the "repositories" entry of the map file, with the following
+    # Save the "repositories" entry of the map file, with the following
     # example format:
     #
     #  "repositories": {
